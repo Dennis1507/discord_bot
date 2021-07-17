@@ -1,28 +1,30 @@
 {
-  "name": "discordbot",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "discord_bot",
+  "version": "2.0.0",
+  "description": "The next build written in TypeScript.",
+  "main": "index.ts",
   "scripts": {
-    "start": "node index.js"
+    "start": "ts-node-dev --respawn src/index.ts"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dennis1507/discord_bot.git"
+  },
   "author": "Dennis#4064",
   "license": "ISC",
-  "dependencies": {
-    "axios": "^0.21.1",
-    "discord.js": "^12.5.3",
-    "dotenv": "^8.6.0",
-    "dsbapi": "^4.1.0",
-    "jsdom": "^16.6.0",
-    "mongoose": "^5.12.7",
-    "ms": "^2.1.3",
-    "snoowrap": "^1.22.0",
-    "table-scraper": "^1.0.3",
-    "urban-dictionary": "^3.0.0"
+  "bugs": {
+    "url": "https://github.com/Dennis1507/discord_bot/issues"
   },
+  "homepage": "https://github.com/Dennis1507/discord_bot#readme",
   "devDependencies": {
-    "eslint": "^7.25.0",
-    "ws": ">=7.4.6"
+    "@types/node": "^16.3.3",
+    "@typescript-eslint/eslint-plugin": "^4.28.3",
+    "@typescript-eslint/parser": "^4.28.3",
+    "eslint": "^7.30.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "discord.js": "^12.5.3"
   }
 }
